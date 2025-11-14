@@ -137,15 +137,70 @@ export const achievements = [
 ];
 
 export const skills = [
-  { name: "React / Next.js" },
-  { name: "Tailwind CSS" },
-  { name: "Framer Motion" },
-  { name: "HTML / CSS / JS" },
-  { name: "Node.js / Express" },
-  { name: "PostgreSQL" },
-  { name: "REST APIs" },
-  { name: "Figma" },
-  { name: "Git / GitHub" },
+  {
+    category: "Frontend",
+    skills: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "SASS/SCSS",
+      "Framer Motion",
+      "Redux",
+      "GraphQL"
+    ]
+  },
+  {
+    category: "Backend",
+    skills: [
+      "Node.js",
+      "Express",
+      "Python",
+      "Flask",
+      "Django",
+      "REST APIs",
+      "GraphQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Firebase",
+      "MySQL"
+    ]
+  },
+  {
+    category: "Design & Tools",
+    skills: [
+      "Figma",
+      "Adobe Creative Suite",
+      "Photoshop",
+      "Illustrator",
+      "After Effects",
+      "VS Code",
+      "Git/GitHub",
+      "Docker",
+      "Figma",
+      "Postman",
+      "Netlify",
+      "Vercel"
+    ]
+  },
+  {
+    category: "Other",
+    skills: [
+      "Linux",
+      "Bash/Shell",
+      "Agile/Scrum",
+      "Jest",
+      "Cypress",
+      "Webpack",
+      "Vite",
+      "CI/CD",
+      "Jira",
+      "Notion"
+    ]
+  }
 ];
 
 export const certificates = [
