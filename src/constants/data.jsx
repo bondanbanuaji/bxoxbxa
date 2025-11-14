@@ -4,41 +4,81 @@ export const personalInfo = {
   name: "Bondan Banuaji",
   role: "Software Engineer",
   bio: "A motivated student with a strong interest in technology and digital development.",
-  email: "bondanbanuaji@gmail.com",      
+  email: "bondanbanuaji@gmail.com",
   location: "Indonesia",
 };
 
 export const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured online shopping platform with payment integration",
-    tech: ["React", "Node.js", "MongoDB"]
+    title: "bobanimelist",
+    description:
+      "A modern platform for exploring anime and manga, built from scratch with a focus on performance, scalability, and developer experience. Features include home & interactive widgets, detail pages, smooth animations, an advanced data layer with RTK Query and Redux Persist, custom UI components following atomic design principles, dark/light theme toggle, localization support, robust error handling, PWA capabilities, infinite scrolling, and advanced search filters.",
+    tech: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Redux Toolkit (RTK Query & Redux Persist)",
+      "React Router",
+      "SCSS",
+      "Motion (animation framework)",
+      "Jikan API",
+      "PWA",
+      "ESLint",
+      "Stylelint",
+    ],
+    image: "../public/project1.webp",
+    github: "https://github.com/bondanbanuaji/bobanimelist",
+    liveUrl: "https://example.com/bobanimelist-live",
   },
   {
-    title: "Task Management App",
-    description: "Productivity application with drag-and-drop interface",
-    tech: ["React", "Firebase", "Tailwind CSS"]
+    title: "YuiBOT – Telegram Chatbot with Tsundere Personality",
+    description:
+      "A Telegram chatbot inspired by Yui Hirasawa from K-ON!, featuring a tsundere-style dry-text personality. Includes conversation memory, image analysis, mood-based responses, time awareness, music-related knowledge, and a special 'curhat' mode for more personal conversations.",
+    tech: [
+      "Python",
+      "Google Gemini API",
+      "Python-Telegram-Bot",
+      "Pytz",
+      "Requests",
+      "Bleach",
+      "Flask",
+    ],
+    image: "../public/project2.webp",
+    github: "https://github.com/bondanbanuaji/yuibot-v1",
+    liveUrl: "https://example.com/yuibot-live",
   },
   {
     title: "Weather Dashboard",
     description: "Real-time weather information with forecasting",
-    tech: ["JavaScript", "API Integration", "CSS3"]
+    tech: ["JavaScript", "API Integration", "CSS3"],
+    image: "/project3.webp",
+    github: "https://github.com/bondanbanuaji/weather-dashboard",
+    liveUrl: "https://example.com/weather-dashboard-live",
   },
   {
     title: "Portfolio Website",
     description: "Interactive portfolio with animations and responsive design",
-    tech: ["React", "Framer Motion", "Tailwind CSS"]
+    tech: ["React", "Framer Motion", "Tailwind CSS"],
+    image: "/project4.webp",
+    github: "https://github.com/bondanbanuaji/portfolio",
+    liveUrl: "https://example.com/portfolio-live",
   },
   {
     title: "Social Media Dashboard",
     description: "Analytics dashboard for social media management",
-    tech: ["React", "Chart.js", "Express"]
+    tech: ["React", "Chart.js", "Express"],
+    image: "/project5.webp",
+    github: "https://github.com/bondanbanuaji/social-media-dashboard",
+    liveUrl: "https://example.com/social-media-dashboard-live",
   },
   {
     title: "Budget Tracker",
     description: "Personal finance management application",
-    tech: ["JavaScript", "Local Storage", "Responsive Design"]
-  }
+    tech: ["JavaScript", "Local Storage", "Responsive Design"],
+    image: "/project6.webp",
+    github: "https://github.com/bondanbanuaji/budget-tracker",
+    liveUrl: "https://example.com/budget-tracker-live",
+  },
 ];
 
 export const socialLinks = [
@@ -150,8 +190,8 @@ export const skills = [
       "SASS/SCSS",
       "Framer Motion",
       "Redux",
-      "GraphQL"
-    ]
+      "GraphQL",
+    ],
   },
   {
     category: "Backend",
@@ -166,8 +206,8 @@ export const skills = [
       "PostgreSQL",
       "MongoDB",
       "Firebase",
-      "MySQL"
-    ]
+      "MySQL",
+    ],
   },
   {
     category: "Design & Tools",
@@ -183,8 +223,8 @@ export const skills = [
       "Figma",
       "Postman",
       "Netlify",
-      "Vercel"
-    ]
+      "Vercel",
+    ],
   },
   {
     category: "Other",
@@ -198,9 +238,9 @@ export const skills = [
       "Vite",
       "CI/CD",
       "Jira",
-      "Notion"
-    ]
-  }
+      "Notion",
+    ],
+  },
 ];
 
 export const certificates = [
