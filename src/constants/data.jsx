@@ -6,6 +6,13 @@ export const personalInfo = {
   bio: "A motivated student with a strong interest in technology and digital development.",
   email: "bondanbanuaji@gmail.com",
   location: "Indonesia",
+  hobbies: [
+    "Coding",
+    "Gaming",
+    "Reading",
+    "Music",
+    "Traveling"
+  ]
 };
 
 export const projects = [

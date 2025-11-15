@@ -1,19 +1,17 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @layer base {
   :root {
-    --font-space-grotesk: 'Space Grotesk', sans-serif;
-    --font-noto-sans: 'Noto Sans', sans-serif;
+    --font-pt-sans: 'PT Sans', sans-serif;
   }
 
   html {
-    font-family: var(--font-noto-sans);
+    font-family: var(--font-pt-sans);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-space-grotesk);
-    font-weight: 600;
+    font-family: var(--font-pt-sans);
+    font-weight: 700; /* Bold for headings */
   }
 
   /* Ensure all text elements get the proper fonts */
@@ -27,8 +25,50 @@
   textarea,
   select,
   label {
-    font-family: var(--font-noto-sans);
+    font-family: var(--font-pt-sans);
   }
+
+  /* Support for italic text */
+  em, i, .italic {
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+  }
+
+  /* Support for bold text */
+  strong, b, .bold {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+  }
+
+  /* Support for normal text */
+  .normal {
+    font-weight: 400;
+  }
+
+  /* Blinking cursor animation for typing effect */
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1, 1.2); /* Slightly stretch vertically */
+    }
+    50% {
+      opacity: 0;
+      transform: scale(1, 0.2); /* Shrink vertically */
+    }
+  }
+
+  .animate-blink {
+    animation: blink 2s ease-in-out infinite; /* Slower 2-second animation */
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background-color: currentColor;
+    vertical-align: middle;
+    margin-left: 0.1em;
+    font-weight: bold;
+  }
+
+
 }
 
 @layer components {
@@ -36,24 +76,26 @@
     @apply p-6 bg-gradient-to-br from-[#111]/80 to-[#0d0d0d]/80 rounded-2xl border border-white/10
            hover:border-white/20 shadow-lg hover:shadow-2xl backdrop-blur-sm relative
            transition-[background,border-color,box-shadow,opacity] duration-400 md:overflow-hidden overflow-y-auto;
-    font-family: var(--font-noto-sans);
+    font-family: var(--font-pt-sans);
   }
 
   .section-title {
     @apply text-lg font-semibold flex items-center gap-2 text-white/90 mb-3;
-    font-family: var(--font-space-grotesk);
+    font-family: var(--font-pt-sans);
+    font-weight: 700; /* Bold */
   }
 
   .gradient-btn {
     @apply px-4 py-2 bg-gradient-to-r from-violet-500 to-cyan-500 text-white text-xs font-semibold rounded-lg
            hover:shadow-lg hover:shadow-violet-500/50 transition-shadow duration-300 transform
            translate-y-2 group-hover:translate-y-0 flex items-center gap-2 cursor-pointer;
-    font-family: var(--font-space-grotesk);
+    font-family: var(--font-pt-sans);
+    font-weight: 700; /* Bold */
   }
 
   .hover-item {
     @apply hover:text-white transition-colors duration-300;
-    font-family: var(--font-space-grotesk);
+    font-family: var(--font-pt-sans);
   }
 
   .bullet {
@@ -97,20 +139,16 @@
     @apply hover:border-orange-400 border-2  hover:shadow-[0_0_25px_rgba(249,115,22,1)];
   }
 
-  .font-space-grotesk {
-    font-family: var(--font-space-grotesk);
-  }
-
-  .font-noto-sans {
-    font-family: var(--font-noto-sans);
+  .font-pt-sans {
+    font-family: var(--font-pt-sans);
   }
 
   .heading-font {
-    font-family: var(--font-space-grotesk);
-    font-weight: 600;
+    font-family: var(--font-pt-sans);
+    font-weight: 700; /* Bold */
   }
 
   .body-font {
-    font-family: var(--font-noto-sans);
+    font-family: var(--font-pt-sans);
   }
 }
